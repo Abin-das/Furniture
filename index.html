@@ -1,633 +1,3239 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+  <title> eCommerce Website</title>
 
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
-  <link rel="shortcut icon" type="image/x-icon" href="fulllogowhite.png">
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
-  <title>De arte</title>
+  
+  <link rel="stylesheet" href="css.css">
+  
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
 
 
-  <style>
-    .row {
-      --bs-gutter-x: -0.5rem !important;
-    }
-  </style>
+  <div class="overlay" data-overlay></div>
 
+ 
 
+  <div class="modal" data-modal>
 
+    <div class="modal-close-overlay" data-modal-overlay></div>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="modal-content">
 
-  <div id="myView">
-    <nav class=" navbar  try d-none d-md-block navbar-expand-lg slidd  navbar-light ">
-      <div class="container-fluid ">
-
-
-        <button class="navbar-toggler bg-light " type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link  text-white " aria-current="page" href="#"><i
-                  class=" fa-solid fa-phone p-2 fontt text-white"></i>Call us :+91 9567135666</a>
-            </li>
-            <li class="nav-item "><a class="nav-link  text-white" href="#"><i
-                  class="fa-solid fa-envelope p-2 fontt text-white"></i>Email us: info@anventures.co.in</a></li>
-            <li class="nav-item"><a class="nav-link  text-white" href="#"><i
-                  class="fa-solid fa-clock p-2 fontt text-white"></i>Working hours: 08:00 to 19:00</a></li>
-          </ul>
-          <ul class="navbar-nav ms-auto mx-5 px-5     mb-lg-0">
-            <li class="nav-item ">
-              <a class="nav-link active" aria-current="page"
-                href="https://www.facebook.com/profile.php?id=100075845723789"><i
-                  class="fa-brands fa-facebook-f  text-white "></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="https://www.instagram.com/dearte_tvm/"><i
-                  class="fa-brands fa-instagram   text-white"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/company/82554904/admin/"><i
-                  class="fa-brands fa-linkedin  text-white"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="https://twitter.com/DeArte_tvm"><i
-                  class="fa-brands fa-twitter  text-white "></i></a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="d-none d-md-block " id="myHeader">
-    <nav class=" navbar   navbar-expand-lg   navbar-light ">
-      <div class="container-fluid  ">
-        <a class="navbar-brand log text-white fontt p-4" href="index.html"><img class="logoo" src="fulllogowhite.png"
-            alt="" id='logo'></a>
-
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse  " id="navbarTogglerDemo02">
-          <ul class="navbar-nav   mb-2 mb-lg-0">
-            <li class="nav-item p-4"><a class="nav-link1 fontt alink text-white " href="index.html"> HOME</a></li>
-            <li class="nav-item"><a class="nav-link fontt  text-white p-4" href="About_us.html">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link fontt text-white p-4" href="project.html">PROJECTS</a></li>
-
-            <li class="nav-item"><a class="nav-link fontt text-white p-4" href="Gallery.html">GALLERY</a></li>
-
-            <li class="nav-item"><a class="nav-link fontt text-white p-4" href="contact.html">CONTACT US</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="fixed-top d-sm-block d-md-none" id="head">
-    <nav class=" navbar   navbar-expand-lg   navbar-light ">
-      <div class="container-fluid  ">
-        <a class="navbar-brand log text-white fontt p-4" href="index.html"><img class="logoo" src="fulllogowhite.png"
-            alt="" id='logo'></a>
-
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse  " id="navbarTogglerDemo02">
-          <ul class="navbar-nav   mb-2 mb-lg-0">
-            <li class="nav-item p-4"><a class="nav-link1 fontt alink text-white " href="index.html"> HOME</a></li>
-            <li class="nav-item"><a class="nav-link fontt  text-white p-4" href="About_us.html">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link fontt text-white p-4" href="project.html">PROJECTS</a></li>
-
-            <li class="nav-item"><a class="nav-link fontt text-white p-4" href="Gallery.html">GALLERY</a></li>
-
-            <li class="nav-item"><a class="nav-link fontt text-white p-4" href="contact.html">CONTACT US</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <header id="header">
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-
-      </div>
-      <div class="carousel-inner" style=" font-family: 'Montserrat' !important;">
-        <div class="carousel-item active">
-          <img src="22.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption  ">
-            <h1>DE ARTE</h1>
-            <p class="lead p-3">The interior expert
-              Interior Furnishing Company in India</p>
-            <button class="button  text-center " style=" font-family: 'Montserrat' !important;  font-weight: bold;">GET
-              A QUOTE</button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="33.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption">
-            <h1>DE ARTE</h1>
-            <p class="lead p-3">The interior expert
-              Interior Furnishing Company in India</p>
-            <button class="button  text-center  "
-              style=" font-family: 'Montserrat' !important  ;  font-weight: bold;">GET A QUOTE</button>
-          </div>
-        </div>
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+      <div class="newsletter-img">
+        <img src="living-room-scandinavian-interior-design.jpg" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>Anon</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email"  name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
     </div>
 
+  </div>
 
+
+
+
+  
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="mid-century-modern-living-room-interior-design-with-monstera-tree.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        chair
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week Order Over - $55
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="picture-frame-wall-with-scandinavian-home-interior.jpg" alt=" logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Furniture</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Chair</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Tables</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">beds</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">desks</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">cupboards</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="pexels-daria-shevtsova-892618.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Traditional</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">new design</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Casual</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Ambians</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">New Design</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Different</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="pexels-donald-tong-189333.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">beds</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">cabinets</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">chairs</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">clocks</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">desks</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">tables</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="pexels-donald-tong-189333.jpg
+                    " alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">beds</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">cabinets</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">chairs</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">clocks</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">desks</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">tables</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="pexels-element-digital-1125130.jpg
+                    " alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Furniture</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Chair</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bed</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Tables</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Cabinets</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Bed</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Chair</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bed</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Tables</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Cabinets</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Cabinets</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Chair</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bed</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Tables</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Cabinets</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Chairs</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Chair</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bed</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Tables</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Cabinets</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Furniture</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Tables</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Beds</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Cabinets</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clock</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Furniture</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Cabinets</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clocks</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Desks</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Tables</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Furniture</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Tables</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Beds</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">cupboards</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Chairs</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">cupboards</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">dresser</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Desks</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Sofas</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Tables</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
 
   </header>
 
-  <div class="login-popup">
-    <div class="box">
-      <div class="img-area">
-        <div class="img">
-          <img src="" alt="">
-        </div>
-        <h1><img src="10.jpeg" alt=""></h1>
-      </div>
-      <div class="form">
-        <div class="close">&times;</div>
-        <div>
-          <h1 class="text-white  mon">Get Latest Offers</h1>
-        </div>
-        <div class=" popupfont text-white mon">Planning to design interiors get our latest offers</div>
-        <div class=" mon pt-4"><a href="https://wa.me/918468088989"><button class="button "><i
-                class="fa fa-whatsapp p-1"></i>Connect on
-              What'sapp</button></a> </div>
-
-      </div>
-    </div>
-  </div>
-  <section class="pt-5 pb-5  ">
-    <div class="row">
-
-      <div class="col-md-6 pt-5 text-white">
-        <div class="container d-flex flex-row-reverse"><img class="well " src="welcome2.jpg" alt=""></div>
-      </div>
-      <div class="col-md-5 p-3 pt-5 text-white">
-        <div class="container pt-3">
-          <div class="mon wel pb-3">Welcome</div>
-          <div class="mon pb-2 wel1 ">We turn your dreams into reality</div>
-          <div class="mon pb-4 wel2">At De Arte, we believe that the ideal home is a symphony of style, sophistication
-            and
-            comfort. Deemed to
-            be one of Kerala’s leading home interior designers, it is our constant endeavour to curate customized
-            furnishing solutions befitting your budget and requirements. From compact modular kitchens to lively dining
-            spaces, our expertise ensure that your living space reflects your personality. Meet our team of experts
-            today and let’s design something different that feels like home.</div>
-          <button class="button4 text-white mon pt-3">READ MORE</button>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-  <section class=" gap m-sm-5">
-
-
-    <div class="text-center sizz   text-white  pb-2">
-      <div class="text-white text-center  nnp">OUR SERVICES</div>What we do
-
-      <div class="diamond"></div>
-      <div class="line text-center "></div>
 
 
 
 
-    </div>
+ 
 
-    <div class="container-fluid mt-3 p-sm-5 ">
+  <main>
 
-      <div class="row ">
-        <div class="col-md-4 nt p-3 ttxt  text-white"> <img class="imgser" src="12.jpeg" alt="">
-          <div class="yll pt-2 pb-2">KITCHEN</div> The way one cook has evolved, so why shouldn’t your kitchen get an
-          upgrade too?
+    
+    <div class="banner">
 
-          De Arte Interiors is the leading modular kitchen designer in Kerala and our professionals can assist you
-          throughout your home décor journey. We are here to help you get everything from an elaborate yet elegant
-          modern kitchens to a beautifully themed minimalist design.
+      <div class="container">
 
-          Home kitchen designs by De Arte Interiors, the best modern interior architects and decorators in Kerala are
-          suitable for all kinds of home set-ups. We ensure ideal use of space and resources to suit the varying needs
-          of our clients. While the utility of each kitchen is different, our expertise covers simple household kitchens
-          along with commercial kitchen spaces like restaurants, hotels and street food counters.
+        <div class="slider-container has-scrollbar">
 
-          Our unique style and great numbers of modular kitchens designs has helped us gain popularity over the years.
-          Call our design team today to get started on designing your dream kitchen!
-        </div>
-        <div class="col-md-4 ttxt  nt p-3  text-white"> <img class="imgser" src="16.png" alt="">
-          <div class="yll pt-2 pb-2">BEDROOM</div>Do you need a bedroom that speaks of style and classic looks along
-          with comfort of coziness? Do you have dreams for your bedroom design? Allow us to make your dream into a
-          reality. We at De Arte Interior Designers can promise you the best bedroom designs, and the best space
-          utilization affirming our status as the leading interior designers in Kerala.
+          <div class="slider-item">
 
-          At De Arte Interiors, we aim to provide world-class bedroom designs and construction services that convert
-          your bedroom into a dreamland where you can relax and rejuvenate with ease and comfort. We are the ideal
-          partner for you to help you create your dream bedroom at affordable prices. Our expert designers have immense
-          knowledge about interior décor, colour schemes, and other small yet important elements that make a bedroom
-          comfortable and relaxing. We are one of the most trusted names in bedroom designing services today.
-        </div>
-        <div class="col-md-4 p-3 nt ttxt   text-white"> <img class="imgser" src="service3.jpg" alt="">
-          <div class="yll pt-2 pb-2">DINING ROOM</div>Designing a dining room is a task which requires great care,
-          efforts, and extraordinary creative thinking. The dining room decor and style of every individual differs, so
-          one design or setting cannot be used across all dining rooms. Hence, to ensure that your dining area is as per
-          your suitability and requirement, De Arte Interior has created dining areas that are unique and enjoyable.
-          With a promise of uniqueness and fairness, De Arte has carved a niche as a leading interior design company in
-          Kerala. Having an experience of many years in the same line, we have designed innumerable dining spaces of
-          various kinds
+            <img src=pexels-emre-can-acer-2079246.jpg
+            " alt="women's latest fashion sale" class="banner-img">
 
-          We offer a wide range of services, including the design of dining areas from scratch, renovation of an
-          existing space or simple decoration of a dining room. De Arte Interiors is famous for our superior quality
-          interior designs that evokes elegance and class. De Arte Interiors is synonymous with style and class in the
-          interior design business. The dining areas provided by De Arte Interiors are relevant to modern settings as
-          they are compact and optimized. Most importantly, while they suit your budget they never fall back on the
-          quality of their standards.
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-md-4 nt p-3 ttxt   text-white"> <img class="imgser" src="service4.jpg" alt="">
-          <div class="yll pt-2 pb-2">LIVING ROOM</div>The living area or living room is the focal point of any home. A
-          space where you can relax and unwind. It should reflect your personal taste and style. At De Arte Interiors,
-          we take a modernistic approach to creating living areas that are contemporary and fresh. Whether your living
-          area needs some new furniture, reupholstering, or a completely fresh look, our interior designers in Kerala
-          will help you create the space you've always dreamed of.
+            <div class="banner-content">
 
-          Every person is different and it is important that the place where he is going to spend most of his hours
-          suits his every requirement. Some like highly modern settings with modern electronic appliances or colorful
-          settings with an oriental look can spice up you living area. De Arte Interior – the best interior design firm
-          in Kerala, is one such place where you can come with all your ideas and find solutions.
-        </div>
-        <div class="col-md-4 nt p-3 ttxt  text-white"> <img class="imgser" src="service5.jpg" alt="">
-          <div class="yll pt-2 pb-2">DECORATIVE UNITS</div>If you are looking for a reliable supplier of decorative
-          items, look no further. De Arte gives you the potential to turn your ideas into beautiful designs and pieces.
-          Custom-made ornamental units exclusively for commercial spaces like boutiques, restaurants, studios, offices,
-          shopping centers etc. are available in a variety of styles. From elegant display units to modern cabinet
-          spaces and open shelves of your choice, our items are made from excellent quality hardwood. As a result, even
-          in the harshest conditions, our goods are sturdy and long-lasting.
+              <p class="banner-subtitle">Trending item</p>
 
-          There are many types of units: Contemporary design units, Modern design units, Traditional living room design
-          units, Classic or antique styled. Find the finest quality of marine plywood laminates and shape your space
-          with the finesse of German technology. Choose from a wide range of fittings, blinds, curtains and wall papers
-          that accentuate the beauty of your space. De Arte source our materials from the finest craftsmen to create
-          some of the most exclusive, hand crafted furniture and ornaments in the industry.
-        </div>
-        <div class="col-md-4 p-3 nt ttxt   text-white"> <img class="imgser" src="service6.jpg" alt="">
-          <div class="yll pt-2 pb-2">KIDS ROOM</div>Newborns need a crib, toddler needs a bed, teenagers have their own
-          space. But the one thing in common is a sense of excitement and nature-inspired design that makes their eyes
-          sparkle. De Arte – The best interior designers in Kerala understands this as well as the needs of parents and
-          kids. We help create rooms that foster a sense of belonging, inspire imagination and nuture growth. A space
-          that makes them feel safe, happy and most importantly loved.
+              <h2 class="banner-title">Homes latest fashion sale</h2>
 
-          For kids and teens, we create spaces that enhance focus and creativity. We’ll also create the perfect
-          environment for studying, playing, sleeping and more. From small rooms to large, De Arte interiors offers
-          expert and unique advice to create a space that’s unique and beautiful just like your child.
-        </div>
-      </div>
+              <p class="banner-text">
+                starting at &dollar; <b>20</b>.00
+              </p>
 
-    </div>
+              <a href="#" class="banner-btn">Shop now</a>
 
-  </section>
-  <section>
-    <div class="text-center sizz  text-white pt-2  pb-5">
-      <div class="">Gallery </div>
-      <div class="diamond1"></div>
-      <div class="line1 text-center  "></div>
-      <div class="pb-5"></div>
+            </div>
 
-
-      <div class="gallery pt-3">
-        <div class="gallery__column">
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb ">
-              <img src="7.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
-            </figure>
-          </a>
-
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="8.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Oladimeji Odunsi</figcaption>
-            </figure>
-          </a>
-
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="9.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div class="gallery__column">
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="10.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
-            </figure>
-          </a>
-
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="11.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
-            </figure>
-          </a>
-
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="12.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Sam Burriss</figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div class="gallery__column">
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="13.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Mari Lezhava</figcaption>
-            </figure>
-          </a>
-
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="14.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
-            </figure>
-          </a>
-
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="15.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div class="gallery__column">
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="16.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
-            </figure>
-          </a>
-
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="17.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
-            </figure>
-          </a>
-
-          <a href="" target="_blank" class="gallery__link">
-            <figure class="gallery__thumb">
-              <img src="18.jpeg" alt="img" class="gallery__image">
-              <figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-
-
-
-
-
-
-
-  </section>
-  <div class=" pb-5">
-    <div class="col-md-12 text-center pb-4"><a class="decoration-none" href="Gallery.html"><button
-          class="button  text-center " style=" font-family: 'Montserrat' !important;">View all images</button></a></div>
-  </div>
-  <section>
-    <div class="box2  fontt">
-
-
-
-      <div class="testimonials-clean">
-        <div class="container">
-          <div class="intro">
-            <h2 class="text-center">Testimonials </h2>
-            <p class="text-center">Our customers love us! Read what they have to say below. Aliquam sed justo ligula.
-              Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
           </div>
-          <div class="row people">
-            <div class="col-md-6 col-lg-4 item">
-              <div class="box">
-                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                  aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-              </div>
-              <div class="author"><img class="rad" src="19.jpeg">
-                <h5 class="name">Ben Johnson</h5>
-                <p class="title">CEO of Company Inc.</p>
-              </div>
+
+          <div class="slider-item">
+
+            <img src=pexels-emre-can-acer-2079249.jpg
+            " alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending accessories</p>
+
+              <h2 class="banner-title">Modern Furnitures</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>15</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
             </div>
-            <div class="col-md-6 col-lg-4 item">
-              <div class="box">
-                <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum
-                  justo suscipit id.</p>
-              </div>
-              <div class="author"><img class="rounded-circle" src="20.jpeg">
-                <h5 class="name">Carl Kent</h5>
-                <p class="title">Founder of Style Co.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 item">
-              <div class="box">
-                <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in,
-                  vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-              </div>
-              <div class="author"><img class="rounded-circle" src="31.jpeg">
-                <h5 class="name">Emily Clark</h5>
-                <p class="title">Owner of Creative Ltd.</p>
-              </div>
-            </div>
+
           </div>
+
+          <div class="slider-item">
+
+            <img src="pexels-evg-kowalievska-1148955.jpg
+
+            " alt="new fashion summer sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Sale Offer</p>
+
+              <h2 class="banner-title">New fashion summer sale</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>29</b>.99
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
         </div>
+
       </div>
 
     </div>
-  </section>
 
-  <section>
+
+
+
+
+   
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="pexels-huseyn-kamaladdin-667838.jpg
+
+              " alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Chairs</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="pexels-ingo-joseph-609768.jpg
+
+              " alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">sofas,</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="pexels-isaw-company-945688.jpg
+              " alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Furniture</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="pexels-jean-van-der-meulen-1457841.jpg" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">cupboards</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="pexels-jean-van-der-meulen-1457842.jpg
+              " alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Tables</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="pexels-jean-van-der-meulen-1543447.jpg
+              " alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Dresser</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="pexels-lisa-1957477.jpg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Tables</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="pexels-marianne-238377.jpg" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Furniture</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="pexels-pixabay-259580.jpg
+                    " alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Furniture</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">cupboards</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">chairs</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tables</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">cupboards</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="pexels-pixabay-271805.jpg
+                    " alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Furniture</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">cupboards</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">chairs</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Beds</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">dresser</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="pexels-pixabay-272802.jpg
+                    " alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Furniture</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Furniture</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Dressser</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Desk</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="pexels-pixabay-275484.jpg
+                    " alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Tables</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Dresser</p>
+                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Dresser</p>
+                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cupboard</p>
+                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cupboard</p>
+                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="pexels-pixabay-276528.jpg" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Furniture</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tables</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sofa</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Furniture</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cupboard</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="pexels-pixabay-276583.jpg" alt="glasses" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Furniture</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Furniture</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Furniture</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="pexels-steve-johnson-923192.jpg" alt="bags" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Furniture</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Furniture</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Furniture</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Furniture</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Furniture</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="pexels-sharath-g-2251247.jpg
+                    " alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Furniture</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$5.00</del>
+                      <p class="price">$4.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="pexels-skitterphoto-584399.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Furniture</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$17.00</del>
+                      <p class="price">$7.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="pexels-steve-johnson-923192.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Furniture</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$5.00</del>
+                      <p class="price">$3.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="pexels-valeria-boltneva-827518.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Furniture</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$15.00</del>
+                      <p class="price">$12.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1571460.jpg
+                      " width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Home Furniture</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Furniture</a>
+
+                      <div class="price-box">
+                        <p class="price">$45.00</p>
+                        <del>$12.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1571468.jpg" alt="girls pink embro design top" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Furniture</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$9.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1571469.jpg" alt="black floral wrap midi skirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Black Furniture</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Furniture</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$76.00</p>
+                        <del>$25.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1571471.jpg" alt="pure garment dyed cotton shirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">New Furniture</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Furniture</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$68.00</p>
+                        <del>$31.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1571472.jpg" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Furniture</a>
+                
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$11.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1643383.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Furniture</a>
+                
+                      <div class="price-box">
+                        <p class="price">$32.00</p>
+                        <del>$20.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1668860 (1).jpg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Furniture</a>
+                
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$25.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1668860.jpg" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Furniture</a>
+                
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$10.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Trending</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1743227.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"> Sofa</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$49.00</p>
+                        <del>$15.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vincent-rivaud-2227832.jpg" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$78.00</p>
+                        <del>$36.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="picture-frame-wall-with-scandinavian-home-interior.jpg" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$94.00</p>
+                        <del>$42.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1571460.jpg" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$54.00</p>
+                        <del>$65.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1668860 (1).jpg" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$52.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1571460.jpg" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-valeria-boltneva-827518.jpg" alt="men's leather formal wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$56.00</p>
+                        <del>$78.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-pixabay-271815.jpg" alt="casual men's brown shoes" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top Rated</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-vecislavas-popa-1571460.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Sofa</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$49.00</p>
+                        <del>$15.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-lisa-1957477.jpg" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$78.00</p>
+                        <del>$36.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-pixabay-276528.jpg" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$94.00</p>
+                        <del>$42.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-li-sun-3190541.jpg" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$54.00</p>
+                        <del>$65.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-pixabay-276583.jpg" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$52.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-pixabay-272802.jpg" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-pixabay-259580.jpg" alt="men's leather formal wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Cupboard</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$56.00</p>
+                        <del>$78.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="pexels-pixabay-276690.jpg" alt="casual men's brown shoes" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Furniture</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Furniture</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+
+          </div>
+
+
+
+         
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="pexels-vecislavas-popa-1743227.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Furniture</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">$150.00</p>
+
+                      <del>$200.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="pexels-jean-van-der-meulen-1457841.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Cupboard</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">$1990.00</p>
+                      <del>$2000.00</del>
+                    </div>
+              
+                    <button class="add-cart-btn">add to cart</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+         
+
+        <div class="product-main">  
+
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="pexels-jean-van-der-meulen-1457841.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="pexels-karl-solano-2883049.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Furniture</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Furniture</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="pexels-jean-van-der-meulen-1457841.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="pexels-karl-solano-2883049.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Furniture</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Dress drawer</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="pexels-jean-van-der-meulen-1457841.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="pexels-karl-solano-2883049.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+            
+
+                  <p class="showcase-badge">15%</p>
+
+                  
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Furniture</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Furniture</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="pexels-jean-van-der-meulen-1457841.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="pexels-karl-solano-2883049.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+            
+
+                  <p class="showcase-badge">15%</p>
+
+                  
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Furniture</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Furniture </h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="pexels-max-vakhtbovych-6585598.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="pexels-pixabay-275484.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+            
+
+                  <p class="showcase-badge">15%</p>
+
+                  
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Furniture</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Cupboard</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="pexels-pixabay-276510.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="pexels-pixabay-276746.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+            
+
+                  <p class="showcase-badge">15%</p>
+
+                  
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Furniture</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Furniture</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="pexels-pixabay-460537.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="pexels-sharath-g-2251247.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+            
+
+                  <p class="showcase-badge">15%</p>
+
+                  
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Furniture</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Furniture</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="pexels-pixabay-460537.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="pexels-sharath-g-2251247.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+            
+
+                  <p class="showcase-badge">15%</p>
+
+                  
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Furniture</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Furniture</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+         
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="pexels-pixabay-276528.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Alan Doe</p>
+
+              <p class="testimonial-title">CEO & Founder Invision</p>
+
+              <img src="pexels-pixabay-276746.jpg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+         
+
+          <div class="cta-container">
+
+            <img src="pexels-vecislavas-popa-1571472.jpg" alt="summer collection" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">25% Discount</p>
+
+              <h2 class="cta-title">Summer collection</h2>
+
+              <p class="cta-text">Starting @ $10</p>
+
+              <button class="cta-btn">Shop now</button>
+
+            </a>
+
+          </div>
+
+
+
+          
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Worldwide Delivery</h3>
+                  <p class="service-desc">For Order Over $100</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">UK Orders Only</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over $100</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+   
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="pexels-vecislavas-popa-1571469.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Furniture</a>
+
+              <a href="#">
+                <h3 class="blog-title">Furniture Retail KPIs 2021 Guide for Furniture Executives.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="pexels-vecislavas-popa-1643383.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Furniture</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Robin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="pexels-vecislavas-popa-1643383.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Furniture</a>
+          
+              <h3>
+                <a href="#" class="blog-title">EBT vendors: Claim Your Share of SNAP Online Revenue.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Selsa</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="picture-frame-wall-with-scandinavian-home-interior.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Furniture</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Pawar</cite> / <time datetime="2022-03-15">Mar 15, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Furniture :</h3>
+
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Drawer</a>
+          <a href="#" class="footer-category-link">tables</a>
+          <a href="#" class="footer-category-link">Dresser</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Furniture :</h3>
+        
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Drawer</a>
+          <a href="#" class="footer-category-link">tables</a>
+          <a href="#" class="footer-category-link">Dresser</a><a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Drawer</a>
+          <a href="#" class="footer-category-link">tables</a>
+          <a href="#" class="footer-category-link">Dresser</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">jewellery :</h3>
+        
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Drawer</a>
+          <a href="#" class="footer-category-link">tables</a>
+          <a href="#" class="footer-category-link">Dresser</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">cosmetics :</h3>
+        
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Drawer</a>
+          <a href="#" class="footer-category-link">tables</a>
+          <a href="#" class="footer-category-link">Dresser</a><a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Furniture</a>
+          <a href="#" class="footer-category-link">Drawer</a>
+          <a href="#" class="footer-category-link">tables</a>
+          <a href="#" class="footer-category-link">Dresser</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Furniture</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cupboard</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Desk</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Beds</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Dresser</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+       
+
+        
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  
+  <script src="js.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15781.874030130435!2d76.9168987!3d8.5508656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56a06bd02b5d03f0!2sAN%20VENTURES!5e0!3m2!1sen!2sin!4v1660974541869!5m2!1sen!2sin"
-  width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"></iframe>
-<footer class="bg-black">
-  <div class="max-w-screen-xl px-4 pt-16 pb-8 mx-auto sm:px-6 lg:px-8">
-    <div class="max-w-md mx-auto">
-      <strong class="block text-xl font-medium text-center text-white sm:text-3xl">
-        Want us to email you with the latest news?
-      </strong>
-
-      <form class="mt-6">
-        <div class="relative max-w-lg">
-          <label class="sr-only" for="email"> Email </label>
-
-          <input class="w-full p-4 pr-16 text-sm font-medium bg-white border-none rounded-full" id="email" type="email"
-            placeholder="john@doe.com" />
-
-          <button
-            class="absolute top-1/2 right-1.5 -translate-y-1/2 rounded-full bg-black p-3 text-xs font-bold uppercase tracking-wide text-white transition hover:bg-blue-700"
-            type="button">
-            Subscribe
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <div class="grid grid-cols-1 gap-8 mt-16 lg:grid-cols-2 lg:gap-32">
-      <div class="max-w-sm mx-auto lg:max-w-none">
-        <img src="fulllogowhite.png" alt="" style="width:200px;" id='logo'>
-
-        <p class="mt-4  text-white lg:text-left lg:text-lg">
-          We have gained perfection in delivering Architecture and Interior designs that define Life perspectives. Our
-          unique play for color symmetry, and interior décor crafts unique indoor and outdoor Space, and
-          infrastructures.
-        </p>
-
-        <div class="flex justify-center gap-4 mt-6 text-gray-300 lg:justify-start">
-          <a class="transition hover:opacity-75" href="https://www.facebook.com/profile.php?id=100075845723789"
-            target="_blank" rel="noreferrer">
-            <span class="sr-only"> Facebook </span>
-
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clip-rule="evenodd" />
-            </svg>
-          </a>
-
-          <a class="transition hover:opacity-75" href="https://www.instagram.com/dearte_tvm/" target="_blank"
-            rel="noreferrer">
-            <span class="sr-only"> Instagram </span>
-
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                clip-rule="evenodd" />
-            </svg>
-          </a>
-
-          <a class="transition hover:opacity-75" href="https://twitter.com/DeArte_tvm" target="_blank" rel="noreferrer">
-            <span class="sr-only"> Twitter </span>
-
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-            </svg>
-          </a>
-
-
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
-        <div>
-          <strong class="text-sm font-bold tracking-wide text-white uppercase">
-            Services
-          </strong>
-
-          <nav class="flex flex-col mt-6 space-y-1 text-gray-400">
-            <a class="transition hover:text-white" href="/"> Kitchen </a>
-            <a class="transition hover:text-white" href="/"> Bedroom </a>
-            <a class="transition hover:text-white" href="/"> Kids Room </a>
-            <a class="transition hover:text-white" href="/"> Decorative Units </a>
-
-          </nav>
-        </div>
-
-        <div>
-          <strong class="text-sm font-bold tracking-wide text-white uppercase">
-            About
-          </strong>
-
-          <nav class="flex flex-col mt-6 space-y-1 text-gray-400">
-            <a class="transition hover:text-white" href="About_us.html"> About </a>
-
-          </nav>
-        </div>
-
-        <div>
-          <strong class="text-sm font-bold tracking-wide text-white uppercase">
-            Support
-          </strong>
-
-          <nav class="flex flex-col mt-6 space-y-1 text-gray-400">
-            <a class="transition hover:text-white" href="/"> FAQs </a>
-            <a class="transition hover:text-white" href="contact.html"> Contact </a>
-            <a class="transition hover:text-white" href="https://wa.me/918468088989"> Live Chat </a>
-          </nav>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-</footer>
-
-
-<a href="https://wa.me/918468088989" class="whatsapp_float m-3" target="_blank"> <i
-    class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-<script src="jquery-3.6.0.js"></script>
-
-
-<script src="js.js"></script>
-
-
-
-
-
-
 
 </html>
